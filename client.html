@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agendamento - Beauty Manager</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="client-container">
+  <header>
+    <img src="logo.png" class="logo">
+    <h1>Agendamento Online</h1>
+  </header>
+  <form id="clientForm">
+    <input type="text" id="clientName" placeholder="Nome completo" required>
+    <input type="date" id="clientBirthday" placeholder="Data de nascimento" required>
+    <input type="tel" id="clientPhone" placeholder="WhatsApp" required>
+    <select id="serviceSelect">
+      <option value="Extensão de Cílios">Extensão de Cílios</option>
+      <option value="Design de Sobrancelhas">Design de Sobrancelhas</option>
+      <option value="Limpeza de Pele">Limpeza de Pele</option>
+    </select>
+    <input type="time" id="appointmentTime" required>
+    <button type="submit">Agendar</button>
+  </form>
+  <div id="calendarView">
+    <!-- Agenda visual por dia, semana, mês, ano -->
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
